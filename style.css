@@ -1,5 +1,56 @@
 * {
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
     padding: 0;
-    margin: 0;
+    margin: 0;    
     box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 69px;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid seashell;
+}
+
+.logo-container {
+    height: 50px;
+    cursor: pointer;
+    
+}
+
+.logo-container img{
+    height: 100%;
+}
+
+ul.nav-links {
+    list-style: none;
+}
+
+ul.nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+ul.nav-links li:nth-child(1) {
+    padding-left: 0;
+}
+
+ul.nav-links li:nth-child(3) {
+    padding-right: 0;
+}
+
+ul.nav-links li a{
+    transition: all .3s ease 0s;
+}
+
+ul.nav-links li a:hover {
+    color: black;
+    background-color: seashell;
 }
