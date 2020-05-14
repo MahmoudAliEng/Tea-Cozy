@@ -4,7 +4,7 @@
     color: seashell;
     background-color: black;
     padding: 0;
-    margin: 0;    
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -17,6 +17,7 @@ header {
     position: fixed;
     width: 100%;
     border-bottom: 1px solid seashell;
+    z-index: 1;
 }
 
 .logo-container {
@@ -30,6 +31,7 @@ header {
 }
 
 ul.nav-links {
+    
     list-style: none;
 }
 
@@ -47,10 +49,45 @@ ul.nav-links li:nth-child(3) {
 }
 
 ul.nav-links li a{
-    transition: all .3s ease 0s;
+    display: flex;
+    align-items: center;
 }
 
 ul.nav-links li a:hover {
     color: black;
     background-color: seashell;
 }
+
+
+/* Main Section Style */
+
+main {
+    position: relative;
+    top: 70px;    
+}
+
+.mission {
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    background-image: url('./imgs/img-mission-background.jpg');
+    
+}
+
+.mission-container  {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+}
+
+.mission-title h2{
+    font-size: 32px;
+    font-weight: 600;
+}    
+
+ 
