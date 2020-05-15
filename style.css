@@ -2,11 +2,13 @@
     font-family: Helvetica, sans-serif;
     font-size: 22px;
     color: seashell;
+    opacity: .9;
     background-color: black;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 
 header {
     display: flex;
@@ -151,18 +153,68 @@ main {
     text-align: center;
 }
 
-.locations {
-    width: 1200px;
-    height: 795px;
-    margin: 0px auto;
+.locations, .locations-title h2 {
+    /* 
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid red;
+    flex-direction: column; */
+    /* border: 2px solid red;
+    width: 1200px;
+    height: 795px;
+    margin: 0px auto; */
     background-image: url('./imgs/img-locations-background.jpg');
+    
+}
+.locations {
+    width: 1200px;
+    height: 500px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    
+}
+ 
+.locations-title h2 {
+    
+    padding-top: 90px;
+    padding-bottom: 15px;
+    font-size: 35px;
+    text-align: center;
+    
 }
 
-.locations-title h2{
+.locations-container {
+    
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
     background: none;
-    color: green;
+    
+}
+
+.location-container {
+    opacity: 1;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.location-container:nth-child(2) {
+    margin: 0 40px;
+}
+
+.location-title h3{
+    
+    font-size: 26px;
+    padding-top: 20px;
+}
+
+.location-container p{
+    
+    padding: 30px 0;
+    font-size: 20px;
 }
